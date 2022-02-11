@@ -31,10 +31,10 @@ namespace EmployeeTrackingCrud_2022
         {
             this.dataGridViewOfDepartment = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnNew = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.BtnClose = new System.Windows.Forms.Button();
+            this.BtnDeleted = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.BtnNew = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOfDepartment)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -53,42 +53,14 @@ namespace EmployeeTrackingCrud_2022
             // panel1
             // 
             this.panel1.Controls.Add(this.BtnClose);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.BtnDeleted);
+            this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.BtnNew);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 249);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(468, 100);
             this.panel1.TabIndex = 1;
-            // 
-            // BtnNew
-            // 
-            this.BtnNew.Location = new System.Drawing.Point(12, 22);
-            this.BtnNew.Name = "BtnNew";
-            this.BtnNew.Size = new System.Drawing.Size(105, 55);
-            this.BtnNew.TabIndex = 0;
-            this.BtnNew.Text = "New";
-            this.BtnNew.UseVisualStyleBackColor = true;
-            this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(123, 22);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 55);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(234, 22);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 55);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // BtnClose
             // 
@@ -99,6 +71,34 @@ namespace EmployeeTrackingCrud_2022
             this.BtnClose.Text = "Close";
             this.BtnClose.UseVisualStyleBackColor = true;
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
+            // 
+            // BtnDeleted
+            // 
+            this.BtnDeleted.Location = new System.Drawing.Point(234, 22);
+            this.BtnDeleted.Name = "BtnDeleted";
+            this.BtnDeleted.Size = new System.Drawing.Size(105, 55);
+            this.BtnDeleted.TabIndex = 2;
+            this.BtnDeleted.Text = "Delete";
+            this.BtnDeleted.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(123, 22);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(105, 55);
+            this.btnUpdate.TabIndex = 1;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // BtnNew
+            // 
+            this.BtnNew.Location = new System.Drawing.Point(12, 22);
+            this.BtnNew.Name = "BtnNew";
+            this.BtnNew.Size = new System.Drawing.Size(105, 55);
+            this.BtnNew.TabIndex = 0;
+            this.BtnNew.Text = "New";
+            this.BtnNew.UseVisualStyleBackColor = true;
+            this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
             // 
             // FrmListDepartment
             // 
@@ -122,8 +122,8 @@ namespace EmployeeTrackingCrud_2022
         private System.Windows.Forms.DataGridView dataGridViewOfDepartment;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnClose;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnDeleted;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button BtnNew;
     }
 }
